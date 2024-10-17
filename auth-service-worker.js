@@ -18,14 +18,12 @@ self.addEventListener("install", (event) => {
 });
 
 self.addEventListener("fetch", (event) => {
-  console.log("Service worker fetch event", JSON.stringify(event.request));
   const { origin } = new URL(event.request.url);
   if (origin !== self.location.origin) return;
   event.respondWith(fetchWithFirebaseHeaders(event.request));
 });
 
 async function fetchWithFirebaseHeaders(request) {
-  console.log(fetchWithFirebaseHeaders, JSON.stringify(firebaseConfig));
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
   const installations = getInstallations(app);
