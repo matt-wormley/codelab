@@ -1,14 +1,17 @@
 env:
+  # Set this with firebase apphosting:secrets:set
+  - variable: GEMINI_API_KEY
+    secret: gemini-api-key
   # Get these values from the Firebase console
   - variable: NEXT_PUBLIC_FIREBASE_API_KEY
-    value: AIzaSyAV0N3DBroAXjv7LScl6n9yORw3vyLcPfI
+    value: TODO
   - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
-    value: wormzer-codelab.firebaseapp.com
+    value: TODO
   - variable: NEXT_PUBLIC_FIREBASE_PROJECT_ID
-    value: wormzer-codelab
+    value: TODO
   - variable: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
-    value: wormzer-codelab.appspot.com
+    value: TODO
   - variable: NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
-    value: 1025881468981
+    value: TODO
   - variable: NEXT_PUBLIC_FIREBASE_APP_ID
-    value: 1:1025881468981:web:1fd17fb96294c9147f417c
+    value: TODO
